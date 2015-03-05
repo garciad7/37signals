@@ -1,2 +1,4 @@
-# 37signals
-37 signals page project
+37signals-page
+=====================
+
+37 Signals recreation project.

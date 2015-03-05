@@ -1,0 +1,289 @@
+/****************
+TABLE OF CONTENTS
+
+Line #      Name
+ 15         Base
+110         Layout
+152         Module
+192         State
+240         Theme
+*****************/
+
+
+
+
+/*  BASE  */
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Reset */
+
+
+h1 {
+	font-family: 'CrimsonSemibold', Georgia, "Times New Roman", Times, serif;
+	font-size: 48px;
+	text-align: center;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	width: 100%;
+}
+
+h2 {
+	font-family: 'CrimsonSemibold', Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;	
+}
+
+h3 {
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+h4 {
+	color: #cc0000;
+	font-size: 15px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	padding: 0 10px;
+	text-align: center;
+}
+
+sup {
+	color: #aaa;
+	font-size: 11px;
+	vertical-align: top;
+}
+
+
+
+/*  Layout  */
+.content-container {
+	width: 850px;
+}
+
+.badge-container {
+	height: auto;
+	width: 606px;
+}
+
+.off-screen {
+	position: absolute;
+	  left: -99999px;
+	  top: 0;
+}
+
+.to-left {
+	float: left;
+}
+
+.to-right {
+	float: right;
+}
+
+.to-center {
+	margin: 0 auto;
+}
+
+.padded-top-bottom {
+	padding: 35px 0;
+}
+
+.spaced-right {
+	margin-right: 30px;
+}
+
+.spaced-top-bottom {
+	margin: 35px 0;
+}
+
+
+
+/*  Module  */
+header {
+	clear: both;
+	height: 39px;
+	width: 164px;
+}
+
+.motd {
+	color: #777;
+	font-size: 13px;
+	margin: 25px 0 0 50px;
+	width: auto;
+}
+
+.badge {
+  background: #eee;
+  background: -webkit-linear-gradient(#fff, #eee);
+  background:    -moz-linear-gradient(#fff, #eee);
+  background:     -ms-linear-gradient(#fff, #eee);
+  background:      -o-linear-gradient(#fff, #eee);
+  background:         linear-gradient(#fff, #eee);
+  border: 1px solid #ccc;
+	border-radius: 6px;
+	height: 250px;
+	width: 180px;
+  position: relative;
+}
+
+nav {
+	margin: 25px 40px 0 0;
+	width: auto;
+}
+
+footer {
+	clear: both;
+	height: 12;
+	width: 72px;
+}
+
+
+/*  State  */
+.arrow-left {  /* http://37signals.com/images/arrow-left.png */
+	background: url(http://37signals.com/images/arrow-left.png);
+	height: 69px;
+	position: absolute;
+	  top: -40px;
+	  right: -30px;
+	width: 69px;
+}
+
+.arrow-right {  /* http://37signals.com/images/arrow-right.png */
+	background: url(http://37signals.com/images/arrow-right.png);
+	height: 69px;
+	position: absolute;
+	  top: -40px;
+	  left: -30px;
+	width: 69px;	
+}
+
+
+h3 a {
+	color: #336699;
+	font-weight: bolder;
+}
+
+.hover-h1 {
+	font-size: 40px;
+}
+
+.hover-h2 {
+	font-family: 'Lucida Grande', Helvetica, Verdana, Arial;
+	font-size: 16px;
+	margin: 25px 0 49px 0;
+}
+
+.nav a {
+	color: #336699;
+	margin: 0;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	color: #6699cc;
+	margin: 0;
+	text-decoration: none;
+}
+
+
+/*  Theme  */
+
+@font-face {
+    font-family: 'CrimsonSemibold';
+    src: url('fonts/Crimson-Semibold-webfont.eot');
+    src: url('fonts/Crimson-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Crimson-Semibold-webfont.woff') format('woff'),
+         url('fonts/Crimson-Semibold-webfont.ttf') format('truetype'),
+         url('fonts/Crimson-Semibold-webfont.svg#CrimsonSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.badge-image {
+	display: block;
+	height: 88px;
+	margin: 20px auto;
+	width: 105px;
+}
+
+.badge-text {
+	display: block;
+	height: 82px;
+	margin: 20px auto;
+	width: 105px;
+}
+
+.basecamp {
+	background: url(http://37signals.com/images/logo-bc.png);
+}
+
+.highrise {
+	background: url(http://37signals.com/images/logo-hr.png);
+
+}
+
+.campfire {
+	background: url(http://37signals.com/images/logo-cf.png);
+}
+
+.nav {
+	display: inline-block;
+	font-size: 13px;
+	padding-right: 20px;
+}
+
+.last a {
+	color: #6699cc;
+	padding-right: 0;
+}
